@@ -9,7 +9,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix schema: <http://schema.org/>.
 
-<https://github.com/djnabil/EXAM_THYP_21-22/blob/main/news/news#> a owl:Ontology ;
+<https://djnabil.github.io/EXAM_THYP_21-22/vocab.ttl> a owl:Ontology ;
     dcterms:title "News_filtre" .
 
 news:ecrivain  a rdfs:Class ;
