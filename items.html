@@ -19,10 +19,15 @@
   </div>
   </div>
   <script>
+    
+    
     url = "https://polemika.univ-paris8.fr/omk/api/items?item_set_id=2";
           
     getData(url);
 
+    
+    //  fonction javascript pour récupérer les données de l'API
+    
     function getData(url) {
       d3.queue()
         .defer(d3.json, url)
@@ -31,6 +36,10 @@
           showItems(results[0]);
         });
     }
+    
+    
+    // fonction pour afficher la liste des items
+    
     function showItems(data) {
 
       let cards = d3.select('#items').selectAll(".col-3").data(data).enter()
@@ -52,6 +61,9 @@
         });
 
     }
+    
+    
+    
   </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -62,4 +74,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  
+  
 </body>
