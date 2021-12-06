@@ -10,7 +10,7 @@
 @prefix schema: <http://schema.org/>.
 
 <https://github.com/djnabil/EXAM_THYP_21-22/blob/main/onto/onto#> a owl:Ontology ;
-    dcterms:title " Réseau  " .
+    dcterms:title "News_filtre" .
 
 news:ecrivain  a rdfs:Class ;
     rdfs:label "ecrivain " ;
