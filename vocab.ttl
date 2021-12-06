@@ -4,14 +4,21 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix news: <https://duraspace.org/wp-content/uploads/2020/02/vivo.owl#News> .
 @prefix teach: <http://linkedscience.org/teach/ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix schema: <http://schema.org/>.
 
-<https://djnabil.github.io/EXAM_THYP_21-22/vocab.ttl> a owl:Ontology ;
-    dcterms:title "News_filtre" .
 
+
+@prefix news: <https://github.com/djnabil/EXAM_THYP_21-22/blob/main/onto/news#> .
+
+ 
+ 
+
+<https://github.com/djnabil/EXAM_THYP_21-22/blob/main/news/news#> a owl:Ontology ;
+    dcterms:title "Nrws Filtres" .
+	
+	
 news:ecrivain  a rdfs:Class ;
     rdfs:label "ecrivain " ;
     owl:sameAs foaf:Person ;
