@@ -23,11 +23,13 @@
     
     
 <div class="container">
-    <h4 style="text-align: center;">filtres </h4>
+
 
     <div class="row">
             
-            <center>  <h5>filtres :</h5>   </center>
+            <center>  
+                <h5>filtres :</h5>  
+            </center>
       
       
             <select class="custom-select" id="selectSubjects" onchange="showFiltreItems()">
@@ -66,6 +68,9 @@
             });
         });
     }
+    
+    
+    
 
     function showFiltreItems() {
         let selectFormations = document.getElementById("selectSubjects");
@@ -79,6 +84,9 @@
         }
         showItems(globalData);
     }
+    
+    
+    
 
     function showItems(data) {
         document.getElementById('items').innerHTML = "";
