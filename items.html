@@ -14,8 +14,8 @@
 <body>
 
     <div class="jumbotron mb-0" style="background-color:#A5DF00 !important">
-            <h1 class="display-3">Examen THYP du 7 décembre 2020</h1>
-            <h2>Promotion 2020 - 2021</h2>  
+            <h1 class="display-3">Examen THYP du 6 décembre 2021</h1>
+            <h2>THYP/2021-2022</h2>  
         </div>
         <h5 class="container">Item</h5>
         
@@ -29,8 +29,14 @@
   
 
   <script>
+    
+    
     url = "https://polemika.univ-paris8.fr/omk/api/items?item_set_id=2";
     getData(url);
+    
+    
+    
+    //  fonction pour récupérer les données de l'API 
 
     function getData(url) {
       d3.queue()
@@ -40,6 +46,10 @@
           showItems(results[0]);
         });
     }
+    
+    
+    // fonction pour afficher la liste des items
+    
     function showItems(data) {
 
       let cards = d3.select('#items').selectAll(".col-3").data(data).enter()
