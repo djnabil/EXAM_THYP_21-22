@@ -1,0 +1,69 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix news: <https://duraspace.org/wp-content/uploads/2020/02/vivo.owl#News> .
+@prefix teach: <http://linkedscience.org/teach/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+
+<https://github.com/djnabil/EXAM_THYP_21-22/blob/main/onto/onto#> a owl:Ontology ;
+    dcterms:title " Réseau  " .
+
+news:ecrivain  a rdfs:Class ;
+    rdfs:label "ecrivain " ;
+    owl:sameAs foaf:Person ;
+    vs:term_status "experimental" .
+
+news:visiteur  a rdfs:Class ;
+    rdfs:label "visiteur " ;
+    owl:sameAs foaf:Person ;
+    vs:term_status "experimental" .
+
+news:infos a rdfs:Class ;
+    rdfs:label "infos" ;
+    owl:sameAs foaf:Person ;
+    vs:term_status "experimental" .
+
+news:filtres a rdfs:Class ;
+    rdfs:label "filtres" ;
+    owl:sameAs foaf:Person ;
+    vs:term_status "experimental" .
+
+
+news:partage a rdf:Property ;
+    rdfs:label "partage" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+news:sujet a rdf:Property ;
+    rdfs:label "sujet" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+news:reference a rdf:Property ;
+    rdfs:label "reference" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+news:nbvisiteur a rdf:Property ;
+    rdfs:label "nbvisiteur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+news:enfant a rdf:Property ;
+    rdfs:label "child" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+news:adult a rdf:Property ;
+    rdfs:label "adult" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+news:personneagee a rdf:Property ;
+    rdfs:label "personneagee" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
